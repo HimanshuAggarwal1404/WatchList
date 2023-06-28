@@ -1,0 +1,36 @@
+.Result{
+    width: 60vw;
+    max-height: 22vh;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+}
+.poster-wrapper img{
+    max-width: 10vw;
+    max-height: 20vh;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+.info{
+    max-height: 22vh;
+    color: black;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    color: black;
+    height: 10vh;
+    width: 58vw;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    margin-left: 2vw;
+}
+.released{
+    color: black;
+    font-size: 1rem;
+    width: 58vw;
+    margin-left: 2vw;
+    justify-content: flex-start;
+}
