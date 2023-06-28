@@ -17,7 +17,14 @@ export const Result=({movie})=> {
     <div className="info">
         <div className="header">
             <div className="title">{movie.title}</div>
-            <div className="released">Released: {movie.release_date}</div>
+            <div className="released">{movie.release_date? movie.release_date.substring(0,4): "-"}</div>
+            <div className="buttons">
+              <button className="btn">Add to Watchlist</button>
+              <button className="btn">Add to Watchlist</button>
+
+
+
+            </div>
 
         </div>
     </div>
