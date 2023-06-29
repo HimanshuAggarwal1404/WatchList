@@ -1,7 +1,25 @@
-import React from "react";
+import React,{useContext} from "react";
+import { GlobalContext } from "./GlobalState";
 import "./Assets/css/Result.css"
 
 export const Result=({movie})=> {
+  const {
+    addMovieToWatchlist,
+    addMovieToWatched,
+    watchlist,
+    watched,
+  } = useContext(GlobalContext);
+
+  let storedMovie = watchlist.find((o) => o.id === movie.id);
+  let storedMovieWatched = watched.find((o) => o.id === movie.id);
+
+  const watchlistDisabled = storedMovie
+    ? true
+    : storedMovieWatched
+    ? true
+    : false;
+
+  const watchedDisabled = storedMovieWatched ? true : false;
   return (
     <div className="Result">
       <div className="poster-wrapper">
@@ -19,8 +37,10 @@ export const Result=({movie})=> {
             <div className="title">{movie.title}</div>
             <div className="released">{movie.release_date? movie.release_date.substring(0,4): "-"}</div>
             <div className="buttons">
-              <button className="btn">Add to Watchlist</button>
-              <button className="btn">Add to Watchlist</button>
+              <button className={`btn`} onClick={()=>addMovieToWatchlist(movie)} disabled={watchlistDisabled}>Add to Watchlist</button>
+              <button className="btn"
+            disabled={watchedDisabled}
+            onClick={() => addMovieToWatched(movie)}>Add to Watched</button>
 
 
 

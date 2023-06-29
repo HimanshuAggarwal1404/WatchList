@@ -1,0 +1,56 @@
+.movie-card {
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.movie-card img {
+    z-index: 1;
+    object-fit: contain;
+    border: 5px solid black;
+    border-radius: 10%;
+
+}
+.inner-card-controls{
+    position: absolute;
+    z-index: 3;
+    width: 10vw;
+    top: 43vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ctrl-btn{
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    height: 3vh;
+    width: 3vh;
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+.movie-card:hover .ctrl-btn{
+    opacity: 1;
+    color: wite;
+    background-color: black;
+    cursor: pointer;
+}
+
+.ctrl-btn i{
+    z-index: 10;
+    display: inline;
+}
+.ctrl-btn:hover{
+    color:rgb(146, 237, 146);
+}

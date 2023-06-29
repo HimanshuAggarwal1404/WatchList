@@ -1,0 +1,35 @@
+.movie-page{
+    max-width: 95vw;
+}
+.header-watchlist{
+    display: flex;
+    width: 98vw;
+    height: 7vh;
+    margin-bottom: 30px;
+}
+.heading-wl{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.count-pill{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.movie-grid {
+    padding: 5px;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  .no-movies{
+    color: rgb(201, 201, 201);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    transform: translateY(10vh);
+  }
