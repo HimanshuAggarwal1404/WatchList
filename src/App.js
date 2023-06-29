@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./Header";
 import {Watchlist} from "./Watchlist"
 import { Watched } from "./Watched";

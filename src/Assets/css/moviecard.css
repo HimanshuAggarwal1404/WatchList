@@ -1,11 +1,4 @@
-.movie-card {
-    width: 20vw;
-    height: 40vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
 
-}
 
 .movie-card img {
     z-index: 1;
@@ -14,16 +7,7 @@
     border-radius: 10%;
 
 }
-.inner-card-controls{
-    position: absolute;
-    z-index: 3;
-    width: 10vw;
-    top: 43vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 .ctrl-btn{
     color: white;
     font-weight: bolder;
