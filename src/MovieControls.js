@@ -14,7 +14,7 @@ export const MovieControls = ({ type, movie }) => {
       {type === "watchlist" && (
         <>
           <button className="ctrl-btn" onClick={() => addMovieToWatched(movie)}>
-          <i class='fa fa-eye-slash'></i>
+          <i class='fa fa-eye'></i>
           </button>
 
           <button
